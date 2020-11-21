@@ -4,7 +4,7 @@
 import smtplib
 
 #this is a sample method for working sample
-
+#use your email and default password to send mail
 sender = ("example@gmail.com")
 recv = input("Enter email to send:")
 message=input("Enter message:")
