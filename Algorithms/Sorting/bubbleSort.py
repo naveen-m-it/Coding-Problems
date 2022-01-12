@@ -1,20 +1,15 @@
 
-def swap(j,i,list):
-    temp = list[i]
-    list[i] = list[j]
-    list[j] = temp
+def bubbleSort(arr):
+    for i in range(len(arr)):
+        already_s =True
+        for j in range(len(arr)-i-1):
+            if arr[j]>arr[j+1]:
+                arr[j],arr[j+1] = arr[j+1],arr[j]
+                already_s = False
+        if already_s:
+            break
 
-def bubbleSort(list):
-    n = len(list)
-    while n > 1:
-        i = 1
-        while i < n:
-            if list[i] < list[i - 1]:
-                swap( i, i - 1,list)
-            i += 1
-        n -= 1
-    return list
-
-if __name__ == "__main__":
-    list=[1,4,3,2,5]
-    print(bubbleSort(list))
+if __name__ == "__main__":    
+    arr=[16, 19, 20, 2, 9, 10, 3, 12, 11, 13, 15, 6, 7, 8, 1, 18, 17, 5, 14, 4]
+    bubbleSort(arr)
+    print(arr)

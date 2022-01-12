@@ -1,15 +1,8 @@
-#Binary Search(Iterative)
-def binarySearch(arr,x):
-    low = 0
-    high = len(arr)-1
-    while low<=high:
-        mid = (high+low)//2
-        if x==arr[mid]:
-            return True
-        elif x>arr[mid]:
-            low = mid+1
-        else:
-            high = mid-1
-    return False
-
-
+def bubbleSort(arr):
+    for i in range(len(arr)):
+        for j in range(len(arr)-i-1):
+            if arr[j]>arr[j+1]:
+                arr[j],arr[j+1] = arr[j+1],arr[j]
+arr = [1,5,4,3,2]
+bubbleSort(arr)
+print(arr)
