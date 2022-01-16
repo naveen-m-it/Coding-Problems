@@ -9,7 +9,7 @@ from telegram.ext.filters import Filters
 from telegram.ext import CommandHandler, CallbackQueryHandler
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 
-updater = Updater("5037953247:AAEnGWZ-fHC_jr6UINNYQSYcmf-Kyl9n7-k",use_context=True)
+updater = Updater("telegram-token-bot",use_context=True)
 ############################### Bot ############################################
 def start(update, context):
   update.message.reply_text(main_menu_message(),
