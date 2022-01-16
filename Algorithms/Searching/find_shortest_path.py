@@ -36,5 +36,5 @@ if __name__ == "__main__":
         'E':['F'],
         'F':['C']
     }
-    ans = shortest_path_1(graph,'D','C')
+    ans = shortest_path_2(graph,'A','D')
     print(ans)

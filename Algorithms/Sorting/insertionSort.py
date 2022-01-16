@@ -14,5 +14,8 @@ def insertionSort(list):
     return list
 
 if __name__ == "__main__":
-    list = [1,4,3,2,5]
+    import random
+    list = [x for x in range(1_00_000)]
+    random.shuffle(list)
+    print(list)
     print(insertionSort(list))
